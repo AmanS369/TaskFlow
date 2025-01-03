@@ -18,7 +18,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-h12zu@w(&bp+2q*dg5!*tq@@+3
 DEBUG = True
 
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS =['*']
 
 # CORS_ALLOWED_ORIGINS =['*']
 # # Application definition
