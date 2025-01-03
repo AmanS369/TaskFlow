@@ -20,8 +20,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
-CORS_ALLOWED_ORIGINS =['*']
-# Application definition
+# CORS_ALLOWED_ORIGINS =['*']
+# # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -134,5 +134,6 @@ SIMPLE_JWT = {
     'UPDATE_LAST_LOGIN': False,
 }
 
+CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
