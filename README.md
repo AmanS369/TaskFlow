@@ -2,7 +2,7 @@
 
 ## Important Links:
 
-- Depoly Link : [TaskFlow](https://task-flow.live)
+- Depolyment Link : [TaskFlow](https://task-flow.live)
 - The Backend repo : [Backend ](https://github.com/AmanS369/TaskFlow)
 - The frontend repo : [Frontend](https://github.com/AmanS369/TaskFLow_Frontend)
 
@@ -13,6 +13,9 @@
 ✅ - **Comprehensive Dashboard** : A user-friendly dashboard that provides a quick summary of tasks, highlights pending and due tasks for the day, and ensures you never miss a deadline.
 
 ✅- **Advanced Filtering Options** : Refine your task list with powerful filters based on due date, date range, priority, and groups, enabling you to focus on what matters most.
+
+✅- **Secure User Authentication** :
+Leverage JWT (JSON Web Token) authentication for a secure and personalized user experience. Each user's tasks and preferences are safely stored and accessible only to them.
 
 ## Tech stack used:
 
