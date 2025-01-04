@@ -10,3 +10,4 @@ env/
 # Django stuff
 db.sqlite3
 staticfiles/
+README.md

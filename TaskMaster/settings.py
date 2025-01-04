@@ -17,7 +17,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-h12zu@w(&bp+2q*dg5!*tq@@+3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =['https://task-flow.live/']
+ALLOWED_HOSTS =['app.task-flow.live']
 
 
 # CORS_ALLOWED_ORIGINS =['*']
