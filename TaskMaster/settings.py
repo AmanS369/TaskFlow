@@ -16,10 +16,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-h12zu@w(&bp+2q*dg5!*tq@@+3-+tj4i-(fig43h7r=o%#t^go')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS =['app.task-flow.live']
-
-
+ALLOWED_HOSTS = ['app.task-flow.live', 'task-flow.live', '127.0.0.1']
 # CORS_ALLOWED_ORIGINS =['*']
 # # Application definition
 
@@ -39,8 +36,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  
+     
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -134,6 +132,30 @@ SIMPLE_JWT = {
     'UPDATE_LAST_LOGIN': False,
 }
 CORS_ALLOWED_ORIGINS = [
-    "https://task-flow.live", 
+    "https://task-flow.live",
+    "https://app.task-flow.live",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 ]
 CORS_ALLOW_CREDENTIALS = True
+
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "authorization",
+    "content-type",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+CORS_EXPOSE_HEADERS = ['Content-Type', 'X-CSRFToken']
